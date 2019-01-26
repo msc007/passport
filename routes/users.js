@@ -2,18 +2,19 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
+const { ensureNotAuthenticated, ensureAuthenticated } = require('../config/auth');
 
 //User Model
 const User = require('../models/User');
 
 //Login Page
-router.get('/login', (req, res) =>{
-	res.render("Login")
+router.get('/login', ensureNotAuthenticated, (req, res) =>{
+	res.render("Login");
 });
 
 //Register Page
-router.get('/register', (req, res) =>{
-	res.render("Register")
+router.get('/register', ensureNotAuthenticated, (req, res) =>{
+	res.render("Register");
 });
 
 //Register Handle
@@ -94,7 +95,7 @@ router.post('/login', (req, res, next) => {
 });
 
 //Logout Handle
-router.get('/logout', (req, res) => {
+router.get('/logout', ensureAuthenticated, (req, res) => {
 	req.logout();
 	req.flash('success_msg', 'Logged out successfully');
 	res.redirect('/users/login');

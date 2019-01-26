@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
+const path = require('path');
 
 const app = express();
 
@@ -47,9 +48,13 @@ app.use((req, res, next) => {
     next();
 });
 
+//Static Folder
+app.use(express.static(path.join(__dirname, 'public')));
+
 //Routes
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
+app.use('/create', require('./routes/create'));
 
 const port = process.env.PORT || 5000;
 app.listen(port, console.log(`Server started on port ${port}`));
