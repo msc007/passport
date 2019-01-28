@@ -1,6 +1,8 @@
+
 body { 
     margin: 0;
     padding: 0;
+    background-color: #f3f3f4;;
 }
 
 .first-div {
@@ -13,4 +15,9 @@ body {
 
 .fa-sign-out {
     color: white;
+}
+
+.card {
+    max-width: 280px;
+    min-width: 250px;
 }

@@ -1,53 +1,122 @@
 <%include ./partials/navbar %>
+<!--search bar-->
+<div class="input-group md-form form-sm form-2 pl-0 my-3 px-3">
+		<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				<label class="btn btn-primary active">
+					<input type="radio" name="options" id="option1" autocomplete="off" checked> Popular
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="options" id="option2" autocomplete="off"> Newest
+				</label>
+		</div>
+		<input class="form-control my-0 py-1 red-border ml-1" type="text" placeholder="Search" aria-label="Search">
+		<div class="input-group-append">
+			<button class="btn btn-primary"><i class="fas fa-search text-grey" aria-hidden="true"></i></button>
+		</div>
+</div>
+<!--contents-->
 <div class="container-fluid">
-	<h1 class="mt-4">Home</h1>
-	<p class="lead mb-3">Home</p>
 	<div class="row">
-		<div class="col-12 col-md-3">
-			<div class="card bg-light mb-3" style="max-width: 20rem; min-width: 20rem;">
-				<div class="card-header bg-primary">Header</div>
-				<div class="card-body">
-					<h4 class="card-title">Light card title</h4>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		<div class="col px-3 py-2">
+			<div class="card bg-light">
+				<div class="card-images" style="max-height:250px;">
+					<img src="../img/steak.jpg" style="float:right; width:50%; height:230px;">
+					<img src="../img/sushi.jpg" style="float:right; width:50%; height:230px;">
+					<p style="float:right; width:50%; max-height:20px; text-align: center; background-color: #EB6864; color:white; margin:0;">Steak</p>
+					<p style="float:right; width:50%; max-height:20px; text-align: center; background-color: #EB6864; color:white; margin:0;">Steak</p>
 				</div>
-			</div>
-		</div>
-		<div class="col-12 col-md-3">
-			<div class="card bg-light mb-3" style="max-width: 20rem; min-width: 20rem;">
-				<div class="card-header">Header</div>
-				<div class="card-body">
-					<h4 class="card-title">Light card title</h4>
-					<p class="card-text">Somequick example text to build on the card title and make up the bulk of the card's content.</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-12 col-md-3">
-			<div class="card bg-light mb-3" style="max-width: 20rem; min-width: 20rem;">
-				<div class="card-header">Header</div>
-				<div class="card-body">
-					<h4 class="card-title">Light card title</h4>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-12 col-md-3">
-			<div class="card bg-light mb-3" style="max-width: 20rem; min-width: 20rem;">
-				<div class="card-header">Header</div>
-				<div class="card-body">
-					<h4 class="card-title">Light card title</h4>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-12 col-md-3">
-				<div class="card bg-light mb-3" style="max-width: 20rem; min-width: 20rem;">
-					<div class="card-header">Header</div>
-					<div class="card-body">
-						<h4 class="card-title">Light card title</h4>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		
+				<div class="card-body" style="max-height:300px; padding:10">
+					<h4 class="card-title">Light card title 1</h4>
+					<p class="card-text">Some quick example text.</p>
+		
+					<div class="btn-group">
+						<a href="#" class="btn btn-primary"><i class="fas fa-play"></i>&nbsp Start</a>
+						<a href="#" class="btn btn-primary"><i class="fas fa-list-ol"></i>&nbsp Ranking</a>
+						<a href="#" class="btn btn-primary"><i class="fas fa-share-alt-square"></i>&nbsp Share</a>
 					</div>
 				</div>
-		</div>		
+			</div>
+		</div>
+		<div class="col px-3 py-2">
+			<div class="card bg-light">
+				<div class="card-images" style="max-height:250px;">
+					<img src="../img/steak.jpg" style="float:right; width:50%; height:230px;">
+					<img src="../img/sushi.jpg" style="float:right; width:50%; height:230px;">
+					<p style="float:right; width:50%; max-height:20px; text-align: center; background-color: #EB6864; color:white;">Steak</p>
+					<p style="float:right; width:50%; max-height:20px; text-align: center; background-color: #EB6864; color:white;">Steak</p>
+				</div>
+				<div class="card-body" style="max-height:250px">
+					<h5 class="card-title">Light card title 2</h4>
+					<p class="card-text">Some quick example text."</p>
+		
+					<div class="btn-group">
+						<a href="#" class="btn btn-primary"><i class="fas fa-play"></i>&nbsp Start</a>
+						<a href="#" class="btn btn-primary"><i class="fas fa-list-ol"></i>&nbsp Ranking</a>
+						<a href="#" class="btn btn-primary"><i class="fas fa-share-alt-square"></i>&nbsp Share</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col px-3 py-2">
+			<div class="card bg-light">
+				<div class="card-images" style="max-height:250px;">
+					<img src="../img/steak.jpg" style="float:right; width:50%; height:230px;">
+					<img src="../img/sushi.jpg" style="float:right; width:50%; height:230px;">
+					<p style="float:right; width:50%; max-height:20px; text-align: center; background-color: #EB6864; color:white;">Steak</p>
+					<p style="float:right; width:50%; max-height:20px; text-align: center; background-color: #EB6864; color:white;">Steak</p>
+				</div>
+				<div class="card-body" style="max-height:250px">
+					<h4 class="card-title">Light card title 3</h4>
+					<p class="card-text">Some quick example text to.</p>
+		
+					<div class="btn-group">
+						<a href="#" class="btn btn-primary"><i class="fas fa-play"></i>&nbsp Start</a>
+						<a href="#" class="btn btn-primary"><i class="fas fa-list-ol"></i>&nbsp Ranking</a>
+						<a href="#" class="btn btn-primary"><i class="fas fa-share-alt-square"></i>&nbsp Share</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col px-3 py-2">
+			<div class="card bg-light">
+				<div class="card-images" style="max-height:250px;">
+					<img src="../img/steak.jpg" style="float:right; width:50%; height:230px;">
+					<img src="../img/sushi.jpg" style="float:right; width:50%; height:230px;">
+					<p style="float:right; width:50%; max-height:20px; text-align: center; background-color: #EB6864; color:white;">Steak</p>
+					<p style="float:right; width:50%; max-height:20px; text-align: center; background-color: #EB6864; color:white;">Steak</p>
+				</div>
+				<div class="card-body" style="max-height:250px;">
+					<h4 class="card-title">Light card title 4</h4>
+					<p class="card-text">Some quick example text to.</p>
+					<div class="btn-group">
+						<a href="#" class="btn btn-primary"><i class="fas fa-play"></i>&nbsp Start</a>
+						<a href="#" class="btn btn-primary"><i class="fas fa-list-ol"></i>&nbsp Ranking</a>
+						<a href="#" class="btn btn-primary"><i class="fas fa-share-alt-square"></i>&nbsp Share</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col px-3 py-2">
+			<div class="card bg-light">
+				<div class="card-images" style="max-height:250px;">
+					<img src="../img/steak.jpg" style="float:right; width:50%; height:230px;">
+					<img src="../img/sushi.jpg" style="float:right; width:50%; height:230px;">
+					<p style="float:right; width:50%; max-height:20px; text-align: center; background-color: #EB6864; color:white;">Steak</p>
+					<p style="float:right; width:50%; max-height:20px; text-align: center; background-color: #EB6864; color:white;">Steak</p>
+				</div>
+				<div class="card-body" style="max-height:250px;">
+					<h4 class="card-title">Light card title 5</h4>
+					<p class="card-text">Some quick example text to.</p>
+					<div class="btn-group">
+						<a href="#" class="btn btn-primary"><i class="fas fa-play"></i>&nbsp Start</a>
+						<a href="#" class="btn btn-primary"><i class="fas fa-list-ol"></i>&nbsp Ranking</a>
+						<a href="#" class="btn btn-primary"><i class="fas fa-share-alt-square"></i>&nbsp Share</a>
+					</div>
+				</div>
+			</div>
+		</div>					
 	</div>
 </div>
+
 
